@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table, th, td{
+			border: 1px solid red;
+			border-collapse: collapse;
+		}
+	</style>
+
+	<title>Learning JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="table.js"></script>
+</head>
+
+<body>
+	<button id="addmore">add more</button>
+	<p></p>
+    <div id="inputdiv" class="col-sm-12" style="display: none;">
+    	<form id="inputform" method="post" onsubmit="return Validation()">
+    		<label class="col-sm-2">name : </label>
+    		<input class="col-sm-2" type="text" id="name" name="name"></input>
+    		<label class="col-sm-2">id : </label>
+    		<input class="col-sm-2" type="text" id="id" name="id"></input>
+    		<label class="col-sm-2">salary : </label>
+    		<input class="col-sm-2" type="text" id="salary" name="salary"></input>
+    		<button class="btn btn-submit" id="addbtn">add</button>
+    	</form>
+    </div>
+    <p></p>
+
+    <table style="width: 50%">
+    	<thead>
+    		<th>name</th>
+    		<th>id</th>
+    		<th>salary</th>
+    		<th>action</th>
+    	</thead>
+    	<tbody id="tbody"></tbody>
+    </table>
+</body>
+</html>
